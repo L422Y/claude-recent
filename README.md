@@ -11,6 +11,12 @@ It docks to the right of the Claude window, lists every Code session by when you
   </tr>
 </table>
 
+## Why a panel instead of another app
+
+This doesn't replace the Claude desktop app. It sits next to it, and every session still runs in the app. So you keep everything the app ships, the day it ships: Remote Control, the Browser pane, split view, side sessions, pull request tracking, and whatever comes next.
+
+Standalone clients like [T3 Code](https://github.com/pingdotgg/t3code) take the other route. They drive Claude Code, along with other agents, from their own interface. That lets them design the whole experience and switch between agents, but each new desktop app feature only reaches you once that client builds its own version. claude-recent adds the one thing the app is missing and leaves the rest to Anthropic.
+
 ## What it shows
 
 - **Waiting on you.** Sessions from the past week that are blocked on you or ready for review sit at the top. A red bar marks blocked sessions, a blue bar marks ones ready for review.
