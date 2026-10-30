@@ -67,6 +67,12 @@ local function build()
     :level(hs.drawing.windowLevels.floating)
     :allowTextEntry(true)
     :deleteOnClose(false)
+    -- The server may still be starting, or restarting; keep trying until it answers
+    :navigationCallback(function(action, view)
+      if action == "didFailProvisionalNavigation" or action == "didFailNavigation" then
+        hs.timer.doAfter(1, function() view:url(URL) end)
+      end
+    end)
 end
 
 -- Raising and lowering only change the window's layer. show() would make the
