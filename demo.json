@@ -1,0 +1,15 @@
+[
+  {"id": "local_00000000-0000-4000-8000-000000000001", "title": "Checkout fails on saved cards", "project": "storefront", "ago": 2, "turns": 41, "status": "blocked", "action": "approve the migration that backfills card fingerprints", "branch": "claude/saved-card-fix"},
+  {"id": "local_00000000-0000-4000-8000-000000000002", "title": "Webhook retries for invoices", "project": "billing-api", "ago": 95, "turns": 18, "status": "review_ready", "detail": "PR ready: exponential backoff, 12 new tests passing", "pr": 214, "prState": "OPEN"},
+  {"id": "local_00000000-0000-4000-8000-000000000003", "title": "Search results feel slow", "project": "storefront", "ago": 7, "turns": 63, "status": "completed", "detail": "p95 down from 840ms to 190ms after adding the trigram index"},
+  {"id": "local_00000000-0000-4000-8000-000000000004", "title": "Add trigram index to products", "project": "storefront", "ago": 31, "turns": 9, "status": "completed", "detail": "index built concurrently; no lock waits", "parent": "local_00000000-0000-4000-8000-000000000003", "kind": "spawned"},
+  {"id": "local_00000000-0000-4000-8000-000000000005", "title": "Rewrite pricing page copy", "project": "docs-site", "ago": 140, "turns": 12, "status": "completed", "detail": "three variants drafted; v2 merged"},
+  {"id": "local_00000000-0000-4000-8000-000000000006", "title": "Pi cluster disk alerts", "project": "infra", "ago": 1300, "turns": 27, "status": "completed", "detail": "log rotation fixed on all 3 nodes; alert cleared"},
+  {"id": "local_00000000-0000-4000-8000-000000000007", "title": "Pi cluster disk alerts (fork)", "project": "infra", "ago": 1500, "turns": 6, "status": null, "detail": null, "parent": "local_00000000-0000-4000-8000-000000000006", "kind": "fork"},
+  {"id": "local_00000000-0000-4000-8000-000000000008", "title": "Dark mode for settings screens", "project": "mobile-app", "ago": 1700, "turns": 35, "status": "completed", "detail": "all 14 screens themed; snapshots updated", "pr": 88, "prState": "MERGED"},
+  {"id": "local_00000000-0000-4000-8000-000000000009", "title": "Flaky login test on CI", "project": "mobile-app", "ago": 2600, "turns": 22, "status": "blocked", "action": "share the CI run where it failed so I can read the trace"},
+  {"id": "local_00000000-0000-4000-8000-000000000010", "title": "Tax rounding off by a cent", "project": "billing-api", "ago": 4300, "turns": 15, "status": "completed", "detail": "banker's rounding replaced with half-up; 3 refunds reissued"},
+  {"id": "local_00000000-0000-4000-8000-000000000011", "title": "Migrate docs to new theme", "project": "docs-site", "ago": 5800, "turns": 48, "status": "completed", "detail": "all pages build; 2 broken links fixed"},
+  {"id": "local_00000000-0000-4000-8000-000000000012", "title": "Terraform state cleanup", "project": "infra", "ago": 8200, "turns": 11, "status": "completed", "detail": "removed 9 orphaned resources; plan is clean"},
+  {"id": "local_00000000-0000-4000-8000-000000000013", "title": "Push notification opt-in flow", "project": "mobile-app", "ago": 9900, "turns": 30, "status": "completed", "detail": "prompt moved after first order; copy approved"}
+]
